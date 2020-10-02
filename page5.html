@@ -2,16 +2,33 @@
     <head>
 <title>Food Blog</title>
 <style>
-    #body{
-        background-image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sherkaan.com%2F&psig=AOvVaw2ikb0y1u7e6VWEiH14MJ8s&ust=1601713205089000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMC2wOa8lewCFQAAAAAdAAAAABAa";
+    body{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+    .contact-title{
+        margin-top: 100px;
+        color:grey;
+        text-transform: uppercase;
+        transition: ease-in-out;
+
+    }
+    .contact-title h1{
+        font-size: 32px;
+        line-height: 10px;
+
     }
 </style>
 
 
     </head>
     <body >
-
-        <h1>Contact Us</h1>
+       
+        
         <div class="contents">
         <a href="page1.html"><button>Homepage</button></a>
         <a href="page2.html"><button>Home recipes</button></a>
@@ -19,8 +36,23 @@
         <a href="page4.html"><button>Food event</button></a>
         <a href="page5.html"><button disable=""disabled>Contact us</button></a>
         </div>
-        <div>
-            
+
+        <div class="contact-title">
+            <h1>Contact Us</h1>
+
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="">
+                <input name="name" type="text"class="form-control" placeholder="yourname"required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="email-id" required>
+                <br>
+                <textarea name="message" class="form-control" plaxceholder="message" required></textarea>
+                <br>
+                <input type="submit" class="form-control submit" value="send message">
+
+
+            </form>
         </div>
     </body>
 </html>
