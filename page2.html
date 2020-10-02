@@ -1,16 +1,118 @@
 <html>
     <head>
-<title>Food Blog</title>
+        <title>Food Blog</title>
+        <style>
+            body{
+                border: solid;
+                border-color: darkcyan;
+                margin: 0px;
+                padding: 0px;
+            }
+            .content {
+                text-align: center;
+                margin:50px;
+            }
+            .btn{
+                border: 1px solid #3498db;
+                background: none;
+                padding:10px 20px;
+                font-size: 20px;
+                font-family: "montserrat";
+                margin: 10px;
+                transition: 0.5s;
+                position:  relative;
+                overflow:hidden;
+            }
+            .btn:hover{
+                color: #fff;
+            }
+            .btn:hover::before{
+                height:180;
+                background: #3498db;
+
+            }
+            h1{
+                text-align: center;
+                margin-top:55px;
+                color:brown;
+                text-transform: uppercase;
+                transition: ease-in-out;
+            }
+            .iframe {
+                width:95%
+                overflow:hidden;
+                margin: 30px auto;
+                text-align:center;
+                padding: 20px 0px;;
+            }
+            .iframe ul{
+                padding:0px;
+                margin:0px;
+            }
+            .frame ul li{
+                list-style:none;
+                float: left;
+                width:25%;
+                height:300px;
+                background-color: darkgray;
+                margin: 60px 60px 0px 75px;
+            }
+            p{
+                text-size-adjust: 25;
+                font-size: 20px;
+                font-family:sans-serif;
+                color:darkgreen;
+
+            }
+            h1{
+                font-size: 32px;
+                line-height: 10px;
+
+            }
+        </style>
     </head>
     <body>
+        
+        <div class="content">
+        <a href="page1.html"><button class= "btn btn1">Homepage</button></a>
+        <a href="page2.html"><button  class= "btn btn2" disable=""disabled>Home recipes</button></a>
+        <a href="page3.html"><button  class= "btn btn3">Restaurants</button></a>
+        <a href="page4.html"><button class= "btn btn4">Food event</button></a>
+        <a href="page5.html"><button class= "btn btn5">Contact us</button></a>
+        </div>
+
         <h1>Homemade Recipes</h1>
-        <a href="page1.html"><button>Homepage</button></a>
-        <a href="page2.html"><button disable=""disabled>Home recipes</button></a>
-        <a href="page3.html"><button>Restaurants</button></a>
-        <a href="page4.html"><button>Food event</button></a>
-        <a href="page5.html"><button>Contact us</button></a>
 
+        <div class="iframe">
+            <ul>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/JCV42SxFulw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Procedure :
+                            In a bowl add cabbage, rice flour, corn flour, salt, garam masala,baking soda,mirchi powder,kothmeera and pudina
+                            Mix all the ingredients evenly. No water is required.
+                            Mix all the ingredients into a ball.
+                            Now take small part of the mixture and shape into bullets.
+                            In a kadai heat oil, enough for deep - fry.
+                            Now fry the bullets for 5-7 mins until they turn into golden brown
+                            Take them into a serving bowl and serve with ketchup.
+                    </p>
+                </li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/1-rzkdiYUCg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>procedure :
+                        In a jar add sweet corn, salt and green chillies.
+                        Blend them into a paste.
+                        Take the mixture into a bowl.
+                        Now add rice flour and mix.
+                        Excess water should be removed.
+                        In a kadai add oil and heat it.
+                        Now make the paste into small wada sizes.
+                        Fry them in oil till golden brown.
+                        Serve them with ketchup..
 
+                    </p>
+                </li>
+            </ul>
+        <button></button>
+        </div>
         
     </body>
 </html>

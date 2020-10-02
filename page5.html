@@ -12,6 +12,29 @@
         font-family: sans-serif;
        
     }
+    .btn{
+        border: 1px solid #3498db;
+        background: none;
+        padding:10px 20px;
+        font-size: 20px;
+        font-family: "montserrat";
+        margin: 10px;
+        transition: 0.5s;
+        position:  relative;
+        overflow:hidden;
+    }
+    .btn:hover{
+        color: #fff;
+    }
+    .btn:hover::before{
+        height:180;
+        background: #3498db;
+
+    }
+    .content {
+                text-align: center;
+                margin:50px;
+            }
     .contact-title{
         margin-top: 100px;
         color:brown;
@@ -57,17 +80,18 @@
         background-color: cadetblue;
         cursor: pointer;
     }
+    
 </style>
     </head>
     <body >
        
         
-        <div class="contents">
-        <a href="page1.html"><button>Homepage</button></a>
-        <a href="page2.html"><button>Home recipes</button></a>
-        <a href="page3.html"><button>Restaurants</button></a>
-        <a href="page4.html"><button>Food event</button></a>
-        <a href="page5.html"><button disable=""disabled>Contact us</button></a>
+        <div class="content">
+        <a href="page1.html"><button class= "btn btn1">Homepage</button></a>
+        <a href="page2.html"><button  class= "btn btn1">Home recipes</button></a>
+        <a href="page3.html"><button class= "btn btn1">Restaurants</button></a>
+        <a href="page4.html"><button class= "btn btn1">Food event</button></a>
+        <a href="page5.html"><button class= "btn btn1" disable=""disabled>Contact us</button></a>
         </div>
 
         <div class="contact-title">
